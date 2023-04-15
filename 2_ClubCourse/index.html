@@ -6,10 +6,29 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>社團課程時間表</h1>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Welcome to my club course project!</h2>
+                <p>Can add theme.</p>
+                <p>Can choose start date.</p>
+                <p>If is day off turn row to grey.</p>
+                <p>Add pop up window to explain my project.</p>
+                <p>even row and odd row have different color.</p>
+            </div>
+        </div>
+
+        <h1>Club course time table</h1>
+
+        <label for="startDate">Choose your start date: </label>
+        <input type="date" id="startDate">
+
+        <input type="text" id="newTopicInput" placeholder="Enter theme"> <!-- Text input field for adding new topic -->
+        <button id="addBtn">Add new theme</button> <!-- Add button for adding new topic -->
+    
         <table  id="courseTable"></table>
+
         <script src="//unpkg.com/jquery"></script>
-        <script src="topic.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
