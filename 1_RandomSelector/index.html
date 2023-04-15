@@ -2,19 +2,40 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Random_selector</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Hello~</h1>
-        <input type="button" value="今天晚上吃什麼">
-        <ul>
-            <li>拉麵</li>
-            <li>滷肉飯</li>
-            <li>水餃</li>
-            <li>pizza</li>
+
+        <!-- Add a modal container element to your HTML -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Welcome to my Randon Selector project!</h2>
+                <p>Add pop up window to explain my project.</p>
+                <p>The pick button won't repeat the last shown food.</p>
+                <p>Add a button to let user add the food they want into the food list.</p>
+                <p>Connect to the Unsplash API to automatically get the related picture of the food being added.</p>
+
+                
+            </div>
+        </div>
+
+        <h1 id="foodName">Don't know what to eat ?</h1>
+        <button id="showRandomFoodBtn">Pick one for you</button>
+        <button id="addFoodBtn">Add Food</button>
+         
+        <ul id = "foodList">
+            <li>Ramen</li>
+            <li>Braised pork rice</li>
+            <li>Dumpling</li>
+            <li>Pizza</li>
         </ul>
-        <img src="https://plus.unsplash.com/premium_photo-1661304668852-c85ed43a0dae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" alt="ramen" width="900" height="600">
+        
+        <div id="foodImage">
+            <!-- default picture -->
+            <img src="https://plus.unsplash.com/premium_photo-1661304668852-c85ed43a0dae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80" alt="ramen" width="900" height="600">
+        </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="main.js" ></script>
