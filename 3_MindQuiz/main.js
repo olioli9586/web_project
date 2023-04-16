@@ -1,4 +1,3 @@
-
 $(function(){
     //儲存目前作答到第幾題
     let currentQuiz=null;//當按鈕按下後，要做的事情
