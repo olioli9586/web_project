@@ -7,10 +7,28 @@
     </head>
     <body>
         <h1>YouTube心情點唱機</h1>
-        <h2></h2><!--播放歌曲名稱放這裡-->
-        <div id = "player"></div><!--YouTubeVideoPlayer-->
-        <br>
-        <input id = "playButton" type = "button" value = "Play">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Welcome to my Youtube Player project!</h2>
+                <p>Add previous and next song button.</p>
+                <p>Add pop up window to explain my project.</p>
+                <p>Add shuffle and loop button to switch play mode</p>
+
+                
+            </div>
+        </div>
+        
+        <div id="player"></div>
+        <h2 id="songTitle"></h2>
+        <button onclick="playPrevSong()">Previous</button>
+        <button onclick="togglePlay()">Play/Pause</button>
+        <button onclick="playNextSong()">Next</button>
+        <button onclick="shufflePlaylist()">Shuffle</button>
+        <button onclick="toggleLoop()">Loop</button>
+
+
+
         <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src = "https://www.youtube.com/iframe_api"></script>
         <script src = "playList.js"></script>
